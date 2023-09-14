@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MERGE CONFLICT</title>
+    <style>
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+.cmd {
+  color: #666;
+  font-weight: bold;
+}
+    </style>
+  </head>
+  <body>
+<pre><span class="cmd">$ git diff</span>
+<b>diff --cc band.txt</b>
+<b>index 881378c,10b72a3..0000000</b>
+<b>--- a/band.txt</b>
+<b>+++ b/band.txt</b>
+<font color="#06989A">@@@ -1,1 -1,1 +1,5 @@@</font>
+<font color="#4E9A06">++&lt;&lt;&lt;&lt;&lt;&lt;&lt; <a href="https://ijc8.me/">ian</a></font>
+<font color="#4E9A06"> +MERGE</font>
+<font color="#4E9A06">++=======</font>
+<font color="#4E9A06">+ CONFLICT</font>
+<font color="#4E9A06">++&gt;&gt;&gt;&gt;&gt;&gt;&gt; <a href="https://ashva.la/">ash</a></font>
+<span class="cmd">$ cat README</span>
+merge conflict is a live coding duo
+that recognizes the impossibility of collaboration
+and the inherent tensions between people, places, and things.
+<span class="cmd">$ cat NEWS</span>
+* 2023-09-14
+merge conflict w/ <a href="https://www.meetup.com/data-dancers/">data dancers</a> @ <a href="https://publicartfutureslab.com/">the futures lab</a>, underground atlanta
+<span class="cmd">$ ls misc</span>
+<font color="#06989A"><b><a href="https://www.youtube.com/watch?v=4JDOD8N25lY">doom.mkv</a></b></font>  <font color="#06989A"><b><a href="https://www.youtube.com/watch?v=ueNHiWF61xM">hams.mp4</a></b></font>  <font color="#06989A"><b><a href="https://ijc8.me/gtcmt-intro-livecoding/">tutorial.html</a></b></font>
+<span class="cmd">$ exit</span></pre>
+  </body>
+</html>
