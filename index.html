@@ -1,47 +1,58 @@
 <!doctype html>
 <html>
-  <head>
-    <title>MERGE CONFLICT</title>
-    <link
-   href="https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap"
-   rel="stylesheet">
-    <style>
-body {
-  background-color: #000;
-  color: #aaa;
-  font-family: "Fira Code";
-  font-size:15pt;
-}
-a, a:visited, a:hover, a:active {
-  color: inherit;
-}
-pre {
-  font-family: "Fira Code";
-}
-.green {
-  color: #4E9A06
-}
-.blue, .link, a.link {
-  color: #06989A;
-}
-.link {
-    font-weight: bold;
-}
-.cmd {
-  color: white;
-  font-weight: bold;
-}
-    </style>
-  </head>
-  <body>
-<pre><span class="cmd">$ git diff</span>
+
+<head>
+  <title>MERGE CONFLICT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #aaa;
+      font-family: "Fira Code";
+      font-size: 15pt;
+    }
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+      color: inherit;
+    }
+
+    pre {
+      font-family: "Fira Code";
+    }
+
+    .green {
+      color: #4E9A06
+    }
+
+    .blue,
+    .link,
+    a.link {
+      color: #06989A;
+    }
+
+    .link {
+      font-weight: bold;
+    }
+
+    .cmd {
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <pre><span class="cmd">$ git diff</span>
 <b>diff --cc band.txt</b>
 <b>index 881378c,10b72a3..0000000</b>
 <b>--- a/band.txt</b>
 <b>+++ b/band.txt</b>
 <span class="blue">@@@ -1,1 -1,1 +1,5 @@@</span>
 <span class="green">++&lt;&lt;&lt;&lt;&lt;&lt;&lt; <a href="https://ijc8.me/">ian</a></span>
-<span class="green"> +MERGE</span>
+<span class="green">+ MERGE</span>
 <span class="green">++=======</span>
 <span class="green">+ CONFLICT</span>
 <span class="green">++&gt;&gt;&gt;&gt;&gt;&gt;&gt; <a href="https://ashva.la/">ash</a></span>
@@ -50,10 +61,12 @@ merge conflict is a live coding duo
 that recognizes the impossibility of collaboration
 and the inherent tensions between people, places, and things.
 <span class="cmd">$ cat NEWS</span>
+* <a class="link" href="https://www.youtube.com/watch?v=T47fWCG1-DM">2023-12-13</a>
+merge conflict christmas special live at GTCMT.
 * <a class="link" href="https://www.youtube.com/watch?v=ANciq819hIQ">2023-09-14</a>
 merge conflict w/ <a href="https://www.meetup.com/data-dancers/">data dancers</a> @ <a href="https://publicartfutureslab.com/">the futures lab</a>, underground atlanta, 8pm
 <span class="cmd">$ ls misc</span>
 <a class="link" href="https://www.youtube.com/watch?v=4JDOD8N25lY">doom.mkv</a>  <a class="link" href="https://www.youtube.com/watch?v=ueNHiWF61xM">hams.mp4</a>  <a class="link" href="https://ijc8.me/gtcmt-intro-livecoding/">tutorial.html</a>
 <span class="cmd">$ exit</span></pre>
-  </body>
+</body>
 </html>
